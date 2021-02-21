@@ -58,7 +58,6 @@ juce_generate_juce_header(Metering)
 
 target_sources(Metering
     PRIVATE
-        SimpleMeter.cpp
         PluginEditor.cpp
         PluginProcessor.cpp
         ${TGMLIBCPPS}

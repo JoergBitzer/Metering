@@ -53,7 +53,9 @@ void SimpleMeterProcessorEditor::resized()
 #endif
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
-    m_metercomponent.setBounds(10,60,180,200);
+    int width = getWidth();
+    float scaleFactor = float(width)/g_minGuiSize_x;
+    m_metercomponent.setBounds(scaleFactor*10,scaleFactor*60,scaleFactor*120,scaleFactor*40);
 
 
 }
